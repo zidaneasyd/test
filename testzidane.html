@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Belanja Online Sederhana</title>
+    <!-- Link ke CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card .card-body {
+            padding: 15px;
+        }
+        .product-card .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .product-card .card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Belanja Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid bg-primary text-white text-center py-5">
+        <h1 class="display-4">Selamat Datang di Toko Online Kami!</h1>
+        <p class="lead">Temukan produk terbaik dengan harga terbaik hanya di sini.</p>
+    </div>
+
+    <!-- Produk Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Produk Kami</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Produk 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produk 1</h5>
+                        <p class="card-text">Deskripsi singkat tentang produk 1. Produk ini sangat berkualitas.</p>
+                        <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Produk 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produk 2</h5>
+                        <p class="card-text">Deskripsi singkat tentang produk 2. Produk ini sangat populer di kalangan pembeli.</p>
+                        <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Produk 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produk 3</h5>
+                        <p class="card-text">Deskripsi singkat tentang produk 3. Produk ini memiliki rating tinggi.</p>
+                        <a href="#" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Belanja Online. Semua hak dilindungi.</p>
+    </div>
+
+    <!-- Link ke CDN Bootstrap JS dan Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
